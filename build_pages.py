@@ -38,5 +38,5 @@ template = environment.get_template("menu_page.html")
 content = template.render(
     figure_page_name='Plot page: (' + ', '.join([str(x) for x in plt_ctrl['y']]) + ')'
 )
-with open(output / 'menu_page.html', mode="w", encoding="utf-8") as message:
+with open(output / 'index.html', mode="w", encoding="utf-8") as message:
     message.write(content)
